@@ -52,14 +52,14 @@ const Work = () => {
                         <div className="flex flex-col gap-[30px] h-[50%]">
                             <div className="text-8xl leading-none font-extrabold text-transparent text-outline">{project.num}</div>
 
-                            <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.category} project</h2>
+                            <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-fuchsia-500 transition-all duration-500 capitalize">{project.category} project</h2>
 
                             <p className="text-white/60">{project.description}</p>
 
                             <ul className="flex gap-4">
                             {
                                 project.stack.map((item,index)=>{
-                                    return <li key={index} className="text-xl text-accent"> 
+                                    return <li key={index} className="text-xl text-fuchsia-500"> 
                                     {item.name}
                                     {index !== project.stack.length -1 && ","}
                                     </li>
@@ -74,7 +74,7 @@ const Work = () => {
                                 <TooltipProvider delayDuration={100}>
                                     <Tooltip>
                                         <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group ">
-                                            <BsArrowUpRight className="text-white text-3xl group-hover:text-accent"/>
+                                            <BsArrowUpRight className="text-white text-3xl group-hover:text-fuchsia-500"/>
                                         </TooltipTrigger>
                                         <TooltipContent>
                                             <p>Live Project</p>
@@ -87,7 +87,7 @@ const Work = () => {
                                 <TooltipProvider delayDuration={100}>
                                     <Tooltip>
                                         <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group ">
-                                            <BsGithub className="text-white text-3xl group-hover:text-accent"/>
+                                            <BsGithub className="text-white text-3xl group-hover:text-fuchsia-500"/>
                                         </TooltipTrigger>
                                         <TooltipContent>
                                             <p>Github Repo</p>

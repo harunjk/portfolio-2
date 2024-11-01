@@ -46,7 +46,7 @@ const Service = () => {
                                     </Link>
                                 </div>
 
-                                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">{servic.title}</h2>
+                                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-fuchsia-500 transition-all duration-500">{servic.title}</h2>
 
                                 <p className="text-white/60">{servic.description}</p>
 

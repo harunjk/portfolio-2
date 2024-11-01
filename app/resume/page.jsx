@@ -1,7 +1,7 @@
 "use client"
 
-import {FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs} from "react-icons/fa"
-import {SiTailwindcss, SiNextdotjs, SiNodedotjs} from "react-icons/si"
+import {FaHtml5, FaCss3, FaJs, FaReact, FaFigma,} from "react-icons/fa"
+import {SiTailwindcss, SiNextdotjs, SiNodedotjs, SiTypescript,SiMongoose,SiMongodb, SiExpress,} from "react-icons/si"
 
 import {Tabs, TabsContent, TabsList, TabsTrigger} from '../../components/ui/tabs'
 
@@ -111,6 +111,22 @@ const skills={
             name:'Next.js'
         },
         {
+            icon:<SiTypescript/>,
+            name:'Typscript'
+        },
+        {
+            icon:<SiMongoose/>,
+            name:'Mongoose'
+        },
+        {
+            icon:<SiMongodb/>,
+            name:'MongoDb'
+        },
+        {
+            icon:<SiExpress/>,
+            name:'Express'
+        },
+        {
             icon:<SiTailwindcss/>,
             name:'tailwind.css'
         },
@@ -150,7 +166,7 @@ const Resume = () => {
                                         return <li key={index}
                                         className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                                         >
-                                            <span className="text-accent text-2xl">{item.duration}</span>
+                                            <span className="text-fuchsia-500 text-2xl">{item.duration}</span>
                                             <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
 
                                             <div>
@@ -179,7 +195,7 @@ const Resume = () => {
                                                 <TooltipProvider delayDuration={100}>
                                                     <Tooltip>
                                                         <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                                                            <div className="text-6xl group-hover:text-accent transition-all duration-300">{skill.icon}</div>
+                                                            <div className="text-6xl group-hover:text-fuchsia-500 transition-all duration-300">{skill.icon}</div>
                                                         </TooltipTrigger>
                                                         <TooltipContent>
                                                             <p>{skill.name}</p>
